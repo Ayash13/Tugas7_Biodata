@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Biodata</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#biodata">Biodata</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="home">
+        <div class="container">
+            <h1>Home</h1>
+            <div class="card">
+                <div class="home-row">
+                    <p style="padding-right: 10px; line-height: 23px;">Saya mahasiswa IT di Universitas Muhammadiyah Yogyakarta. Saat ini saya semester 4, masih belajar tentang web dan mobile app development.</p>
+                    <img class="myimage" src="https://ayash13.github.io/My-Portfolio/assets/images/my-avatar.png" alt="Foto Ayash">
+                    
+                </div>
+                
+                <p>Saya mahir membuat website menggunakan HTML, CSS, dan JavaScript, serta mengembangkan aplikasi menggunakan Flutter. Pemrograman, khususnya pengembangan web dan aplikasi, adalah minat saya.</p>
+                <p>Selain itu, saya juga sedang belajar tentang desain UI/UX, Python, C#, ilmu data, manajemen basis data, dan banyak bidang terkait lainnya..</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="display: none;" id="biodata" class="biodata">
+        <div class="container">
+            <h1>Biodata</h1>
+            <div class="card">
+                <form>
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="name">Nama:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="age">Umur:</label>
+                            <input type="number" id="age" name="age" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="address">Alamat:</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="education">Pendidikan:</label>
+                            <input type="text" id="education" name="education" required>
+                        </div>
+                    </div>      
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="gender">Jenis Kelamin:</label>
+                            <label>
+                                <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="Perempuan"> Perempuan
+                            </label>
+                        </div>
+                        <div class="form-column">
+                            <label for="hobbies">Hobi:</label>
+                            <label>
+                                <input type="checkbox" name="hobbies" value="Membaca"> Membaca
+                            </label>
+                            <label>
+                                <input type="checkbox" name="hobbies" value="Olahraga"> Olahraga
+                            </label>
+                            <label>
+                                <input type="checkbox" name="hobbies" value="Tidur"> Tidur
+                            </label>
+                            <label>
+                                <input type="checkbox" name="hobbies" value="Makan"> Makan
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit">Simpan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="display: none;" id="about" class="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <div class="card">
+                <p>Saya adalah seorang web developer dengan pengalaman dalam mengembangkan aplikasi web menggunakan
+                    HTML, CSS, dan JavaScript. Saya memiliki keahlian dalam desain responsif, pengoptimalan performa,
+                    dan pengembangan front-end. Saya juga memiliki pemahaman yang baik tentang kerangka kerja seperti
+                    React dan Vue.</p>
+                <p>Saya memiliki minat dalam desain UI/UX dan senang menciptakan pengalaman pengguna yang intuitif dan
+                    menarik. Saya senang mempelajari tren terbaru dalam desain web dan berusaha menerapkannya dalam
+                    pekerjaan saya.</p>
+                <p>Selain itu, saya aktif di media sosial. Anda dapat menghubungi saya dan mengikuti perkembangan saya
+                    melalui:</p>
+
+                <ul class="social-media">
+                    <li>
+                        <a href="https://www.instagram.com/ayash.af/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Ayash13" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="text-align: center;">Biodata Kamu</h2>
+            <p id="enteredName"></p>
+            <p id="enteredAge"></p>
+            <p id="enteredAddress"></p>
+            <p id="enteredEducation"></p>
+            <p id="enteredGender"></p>
+            <p id="enteredHobbies"></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b1a1a;
+    color: #fff;
+}
+
+.myimage{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.home-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.navbar {
+    background-color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 25px;
+    transition: all 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: #555;
+    border-radius: 20px;
+}
+
+.navbar .active {
+    background-color: #888;
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+h1,
+h2,
+p {
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 10px auto;
+    max-width: 400px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-media li {
+    margin-right: 10px;
+}
+
+.social-media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #555;
+}
+
+.social-media i {
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.form-row {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.form-column {
+    flex: 1;
+    margin-right: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    padding: 20px 155px;
+    background-color: #212020;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.form-row:last-child {
+    margin-bottom: 0;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #191818d2;
+}
+
+.modal-content {
+    background-color: #333;
+    margin: 20% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+.close {
+    color: #888;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+    body {
+        padding: 60px;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .button {
+        padding: 30px 50px;
+    }
+
+
+    .card {
+        margin: 0;
+    }
+}
